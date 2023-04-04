@@ -6,15 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Juice Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .smoothies-title{
+            background-image: url('./images/backgrounds/smoothies-bowls.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .snacks-title{
+            background-image: url('./images/backgrounds/person-holding-bowl.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .juices-title{
+            background-image: url('./images/backgrounds/food.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .footer{
+            background-image: url('./images/footer.jpg');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-black">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6" aria-label="Global">
-            <div class="flex flex-1">
+            <div class="flex flex-1 justify-center items-center">
             <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">The Juice Company</span>
                 <img class="h-8 w-auto" src="./images/logo-small.png" alt="">
             </a>
+            <span class="text-white ml-3">The Juice Company</span>
             </div>
             
             <div class="hidden lg:flex lg:gap-x-12">
@@ -26,8 +52,8 @@
 
             </div>
 
-            <a href="#boosters" class="text-sm font-semibold leading-6 text-white">Boosters</a>
-            <a href="#bowls" class="text-sm font-semibold leading-6 text-white">Acai Bowls & More</a>
+            <a href="#snacks" class="text-sm font-semibold leading-6 text-white">Snacks</a>
+            <a href="#juices" class="text-sm font-semibold leading-6 text-white">Juices</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             </div>
@@ -35,7 +61,9 @@
     </header>
     <section id="smoothies" class="mt-10 mx-10">
         <!-- Titulo -->
-        <h1 class="text-4xl mb-5">Superfood Smoothies</h1>
+        <div class="smoothies-title w-full h-24 mb-5 flex flex-col justify-center items-center">
+            <h1 class="text-5xl text-white">Superfood Smoothies</h1>
+        </div>
         <!-- Productos -->
         <div class="flex mb-3">
             <img class="w-24 mr-5" src="./images/smoothies-bowls/414-coco-verde.jpg">
@@ -95,9 +123,11 @@
 
 
     </section>
-    <section id="boosters" class="mt-10 mx-10">
+    <section id="snacks" class="mt-10 mx-10">
         <!-- Titulo -->
-        <h1 class="text-4xl mb-5">boosters</h1>
+        <div class="snacks-title w-full h-24 mb-5 flex flex-col justify-center items-center">
+            <h1 class="text-5xl text-white">Snacks</h1>
+        </div>
         <!-- Productos-->
         <div class="flex mb-3">
             <img class="w-24 mr-5" src="./images/snacks/475-breakfast-bowl.jpg">
@@ -125,9 +155,11 @@
 
 
     </section>
-    <section id="bowls" class="mt-10 mx-10">
+    <section id="juices" class="mt-10 mx-10">
         <!-- Titulo -->
-        <h1 class="text-4xl mb-5">Acai Bowls & More</h1>
+        <div class="juices-title w-full h-24 mb-5 flex flex-col justify-center items-center">
+            <h1 class="text-5xl text-white">Juices</h1>
+        </div>
         <!-- Productos -->
         <div class="flex mb-3">
             <img class="w-24 mr-5" src="./images/juices/374-spicy-green.jpg">
@@ -187,8 +219,8 @@
     </section>
 
 
-    <footer>
-        <img src="./images/footer.jpg" class="w-full">
+    <footer class="footer w-full h-96 mt-10 p-5 flex flex-col justify-end items-end">
+        The Juice Company - All Rights Reserved 2023
     </footer>
 </body>
 </html>
